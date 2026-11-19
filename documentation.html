@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Setup instructions and command reference for The Scribe Discord bot.">
+<title>Documentation and command guide | Xxodus Bots</title>
+<style>
+:root{color-scheme:dark;--bg:#0b0912;--panel:#151020;--text:#f6f1ff;--muted:#b7abc9;--purple:#a78bfa;--gold:#e8c875;--line:#342647}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#352052 0,transparent 55%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:var(--gold)}.wrap{width:min(1080px,92%);margin:auto}header{padding:22px 0;border-bottom:1px solid #ffffff12;position:sticky;top:0;background:#0b0912e8;backdrop-filter:blur(12px);z-index:3}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:850;letter-spacing:.04em;color:var(--text);text-decoration:none}.brand span{color:var(--gold)}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--muted);font-size:.93rem}nav a:hover{color:var(--gold)}
+.hero{padding:70px 0 42px}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.2em;font-size:.76rem;font-weight:800}
+h1{font-size:clamp(2.5rem,6vw,4.3rem);line-height:1.06;letter-spacing:-.04em;margin:12px 0}h1 span{color:var(--purple)}.lead{max-width:760px;color:var(--muted);font-size:1.08rem}
+section{padding:28px 0}.section-head{margin-bottom:20px}.section-head h2{font-size:clamp(1.55rem,3.5vw,2.2rem);margin:0 0 6px}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,#1b1429,#100d18);border:1px solid var(--line);border-radius:18px;padding:22px}.card h3{margin:0 0 7px}.card p{color:var(--muted);margin:0}
+.btn{display:inline-block;padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:750;border:1px solid var(--line)}.primary{background:var(--gold);color:#20172b;border-color:var(--gold)}.secondary{background:#ffffff08;color:var(--text)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.notice{padding:14px 16px;border-left:3px solid var(--gold);background:#e8c8750c;color:var(--muted);border-radius:0 10px 10px 0}
+.status{display:flex;align-items:flex-start;gap:14px;background:#ffffff05;border:1px solid var(--line);padding:20px;border-radius:16px}.status-mark{font-size:1.5rem}.status strong{display:block}.muted{color:var(--muted)}
+.command{background:#0b0912;border:1px solid #493765;color:#e0d3ff;border-radius:8px;padding:3px 8px;font: .94em ui-monospace,SFMono-Regular,Consolas,monospace;white-space:nowrap}
+table{width:100%;border-collapse:collapse;background:#ffffff05;border:1px solid var(--line);border-radius:14px;overflow:hidden}th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--gold);font-weight:750}td{color:var(--muted)}tr:last-child td{border-bottom:0}
+pre{overflow-x:auto;background:#0b0912;border:1px solid var(--line);border-radius:12px;padding:14px;color:#e0d3ff}
+footer{border-top:1px solid #ffffff12;padding:26px 0;color:var(--muted);font-size:.9rem;margin-top:40px}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}footer a{margin-left:14px;text-decoration:none}
+@media(max-width:720px){.grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}table{display:block;overflow-x:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="index.html">XXODUS <span>BOTS</span></a>
+<nav><a href="index.html#bots">Our bots</a><a href="scribe.html">The Scribe</a><a href="bot-status.html">Bot status</a><a href="documentation.html">Documentation</a><a href="https://discord.gg/8zNKJfKvk" target="_blank" rel="noopener noreferrer">Support</a></nav>
+</div></header>
+<main class="wrap">
+
+<section class="hero">
+<div class="eyebrow">The Scribe help centre</div>
+<h1>Documentation &amp; <span>commands.</span></h1>
+<p class="lead">Everything you need to get started with The Scribe, run a quote round, earn points, and contribute quotes to the collection.</p>
+<div class="actions"><a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=1558856301088342147&amp;permissions=0&amp;scope=bot%20applications.commands" target="_blank" rel="noopener noreferrer">Invite The Scribe</a><a class="btn secondary" href="https://discord.gg/8zNKJfKvk" target="_blank" rel="noopener noreferrer">Get support</a></div>
+</section>
+<section>
+<div class="section-head"><h2>Getting started</h2><p>The Scribe uses Discord slash commands. Type <span class="command">/</span> in the message box and select a command from Discord's command picker.</p></div>
+<div class="grid">
+<article class="card"><h3>1. Add the bot</h3><p>Invite The Scribe to a server where you have permission to add bots. Review the permissions Discord displays during installation.</p></article>
+<article class="card"><h3>2. Start a round</h3><p>Use <span class="command">/quote</span> to display a quote. You can choose a category or leave it blank for a random category.</p></article>
+<article class="card"><h3>3. Guess the source</h3><p>Use <span class="command">/guess answer:</span> followed by the film, series, game, anime, or book you think the quote comes from.</p></article>
+<article class="card"><h3>4. Need a clue?</h3><p>Use <span class="command">/hint</span> to reveal the clue for the current round. A hint can only be revealed once per round in that channel.</p></article>
+</div>
+</section>
+<section>
+<div class="section-head"><h2>Command reference</h2><p>Commands and options reflected in the current The Scribe bot code.</p></div>
+<table>
+<thead><tr><th>Command</th><th>What it does</th><th>Options / notes</th></tr></thead>
+<tbody>
+<tr><td><span class="command">/quote</span></td><td>Starts a new quote-guessing round in the current channel.</td><td>Optional <span class="command">category</span>: Anime and manga, Video games, Films and TV, or Books and fantasy. Leave blank for any category.</td></tr>
+<tr><td><span class="command">/guess</span></td><td>Submits your answer for the active round.</td><td>Required <span class="command">answer</span>: the name of the source. Start a round with <span class="command">/quote</span> first.</td></tr>
+<tr><td><span class="command">/hint</span></td><td>Shows the clue for the active quote.</td><td>One hint per round, per channel.</td></tr>
+<tr><td><span class="command">/score</span></td><td>Shows your total points.</td><td>Points are stored against your Discord user ID.</td></tr>
+<tr><td><span class="command">/leaderboard</span></td><td>Displays the top ten players.</td><td>Ordered by points, with a Discord user mention for each player.</td></tr>
+<tr><td><span class="command">/submitquote</span></td><td>Submits a community quote for future rounds.</td><td>Required: <span class="command">quote</span>, <span class="command">source</span>, <span class="command">category</span>, and <span class="command">hint</span>. Limits: quote 1,000 characters, source 100, hint 300.</td></tr>
+<tr><td><span class="command">/setdailychannel</span></td><td>Sets the current channel as the destination for daily quote posts.</td><td>Requires the Discord permission <strong>Manage Server</strong>. Posts are scheduled for 9:00 AM Europe/London time while the bot is online.</td></tr>
+</tbody>
+</table>
+</section>
+<section>
+<div class="section-head"><h2>Submitting a quote</h2><p>Community submissions help expand the quote pool.</p></div>
+<article class="card">
+<p>Use <span class="command">/submitquote</span> and fill in all four fields:</p>
+<ul class="muted">
+<li><strong>quote</strong> — the exact line players will see.</li>
+<li><strong>source</strong> — the film, show, game, anime, or book it comes from.</li>
+<li><strong>category</strong> — choose one of the four available categories.</li>
+<li><strong>hint</strong> — a clue to help players identify the source.</li>
+</ul>
+<p>The current command allows up to three submissions per user in a 60-second period. A successful submission is added to the quote pool and can appear in future <span class="command">/quote</span> rounds.</p>
+</article>
+</section>
+<section>
+<div class="section-head"><h2>Daily quote setup</h2><p>Server administrators can choose where the daily challenge is posted.</p></div>
+<article class="card">
+<ol class="muted">
+<li>Go to the text channel where you want daily quotes to appear.</li>
+<li>Run <span class="command">/setdailychannel</span> in that channel.</li>
+<li>The bot confirms the selected channel. Daily posts are scheduled for 9:00 AM UK time.</li>
+</ol>
+<p class="notice">The daily scheduler depends on The Scribe being online and retaining access to the selected channel. If a post does not appear, check the bot status page and support server.</p>
+</article>
+</section>
+<section>
+<div class="section-head"><h2>Need more help?</h2><p>For setup help, bug reports, or questions, visit the community support server.</p></div>
+<div class="actions"><a class="btn primary" href="https://discord.gg/8zNKJfKvk" target="_blank" rel="noopener noreferrer">Xxodus Bots Discord</a><a class="btn secondary" href="bot-status.html">Check bot status</a><a class="btn secondary" href="scribe.html">About The Scribe</a></div>
+</section>
+
+</main>
+<footer><div class="wrap foot"><span>© 2026 Xxodus Bots. Independent community projects.</span><span><a href="index.html">Home</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a><a href="https://discord.gg/8zNKJfKvk" target="_blank" rel="noopener noreferrer">Support</a></span></div></footer>
+</body></html>

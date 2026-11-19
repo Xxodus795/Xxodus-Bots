@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Status information and service notices for Xxodus Bots and The Scribe.">
+<title>Bot status | Xxodus Bots</title>
+<style>
+:root{color-scheme:dark;--bg:#0b0912;--panel:#151020;--text:#f6f1ff;--muted:#b7abc9;--purple:#a78bfa;--gold:#e8c875;--line:#342647}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#352052 0,transparent 55%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:var(--gold)}.wrap{width:min(1080px,92%);margin:auto}header{padding:22px 0;border-bottom:1px solid #ffffff12;position:sticky;top:0;background:#0b0912e8;backdrop-filter:blur(12px);z-index:3}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:850;letter-spacing:.04em;color:var(--text);text-decoration:none}.brand span{color:var(--gold)}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--muted);font-size:.93rem}nav a:hover{color:var(--gold)}
+.hero{padding:70px 0 42px}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.2em;font-size:.76rem;font-weight:800}
+h1{font-size:clamp(2.5rem,6vw,4.3rem);line-height:1.06;letter-spacing:-.04em;margin:12px 0}h1 span{color:var(--purple)}.lead{max-width:760px;color:var(--muted);font-size:1.08rem}
+section{padding:28px 0}.section-head{margin-bottom:20px}.section-head h2{font-size:clamp(1.55rem,3.5vw,2.2rem);margin:0 0 6px}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,#1b1429,#100d18);border:1px solid var(--line);border-radius:18px;padding:22px}.card h3{margin:0 0 7px}.card p{color:var(--muted);margin:0}
+.btn{display:inline-block;padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:750;border:1px solid var(--line)}.primary{background:var(--gold);color:#20172b;border-color:var(--gold)}.secondary{background:#ffffff08;color:var(--text)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.notice{padding:14px 16px;border-left:3px solid var(--gold);background:#e8c8750c;color:var(--muted);border-radius:0 10px 10px 0}
+.status{display:flex;align-items:flex-start;gap:14px;background:#ffffff05;border:1px solid var(--line);padding:20px;border-radius:16px}.status-mark{font-size:1.5rem}.status strong{display:block}.muted{color:var(--muted)}
+.command{background:#0b0912;border:1px solid #493765;color:#e0d3ff;border-radius:8px;padding:3px 8px;font: .94em ui-monospace,SFMono-Regular,Consolas,monospace;white-space:nowrap}
+table{width:100%;border-collapse:collapse;background:#ffffff05;border:1px solid var(--line);border-radius:14px;overflow:hidden}th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--gold);font-weight:750}td{color:var(--muted)}tr:last-child td{border-bottom:0}
+pre{overflow-x:auto;background:#0b0912;border:1px solid var(--line);border-radius:12px;padding:14px;color:#e0d3ff}
+footer{border-top:1px solid #ffffff12;padding:26px 0;color:var(--muted);font-size:.9rem;margin-top:40px}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}footer a{margin-left:14px;text-decoration:none}
+@media(max-width:720px){.grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}table{display:block;overflow-x:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="index.html">XXODUS <span>BOTS</span></a>
+<nav><a href="index.html#bots">Our bots</a><a href="scribe.html">The Scribe</a><a href="bot-status.html">Bot status</a><a href="documentation.html">Documentation</a><a href="https://discord.gg/8zNKJfKvk" target="_blank" rel="noopener noreferrer">Support</a></nav>
+</div></header>
+<main class="wrap">
+
+<section class="hero">
+<div class="eyebrow">Service information</div>
+<h1>Bot <span>status.</span></h1>
+<p class="lead">A place to check for service notices and known issues affecting Xxodus Bots projects.</p>
+</section>
+<section>
+<div class="status">
+<div class="status-mark">ℹ️</div>
+<div><strong>Live monitoring is not connected yet</strong>
+<p class="muted">This page does not currently receive automatic heartbeat or uptime data. The Scribe's real-time status cannot be confirmed from this page, so no online or operational status is being claimed.</p>
+</div>
+</div>
+</section>
+<section>
+<div class="section-head"><h2>The Scribe</h2><p>Current public status information</p></div>
+<div class="grid">
+<article class="card"><h3>Bot availability</h3><p>Not verified live on this page. Check the Xxodus Bots Discord for the latest announcement or ask in the support channels.</p></article>
+<article class="card"><h3>Scheduled daily quotes</h3><p>The bot is configured to post at 9:00 AM UK time in the channel selected by a server administrator. Posts depend on the bot being online and able to access that channel.</p></article>
+</div>
+</section>
+<section>
+<div class="section-head"><h2>Incidents and maintenance</h2><p>Updates will be posted here when they are manually added by the Xxodus Bots team.</p></div>
+<p class="notice">No incident history or maintenance notices are currently published on this page. For current information, visit the <a href="https://discord.gg/8zNKJfKvk" target="_blank" rel="noopener noreferrer">Xxodus Bots support server</a>.</p>
+<div class="actions"><a class="btn primary" href="https://discord.gg/8zNKJfKvk" target="_blank" rel="noopener noreferrer">Visit support server</a><a class="btn secondary" href="documentation.html">Read the command guide</a></div>
+</section>
+
+</main>
+<footer><div class="wrap foot"><span>© 2026 Xxodus Bots. Independent community projects.</span><span><a href="index.html">Home</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a><a href="https://discord.gg/8zNKJfKvk" target="_blank" rel="noopener noreferrer">Support</a></span></div></footer>
+</body></html>
